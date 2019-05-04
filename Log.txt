@@ -6,6 +6,9 @@ dotnet ef migrations remove
 
 
 
+dotnet watch run
+
+
 Start Docker Container (MSSQL):
 --------------------------------
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=MyComplexPassword!1234' -p 1433:1433  -v ~/usr/my/db:/var/opt/mssql -d microsoft/mssql-server-linux
